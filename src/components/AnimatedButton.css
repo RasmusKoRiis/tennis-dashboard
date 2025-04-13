@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700,900');
+
+.button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+  display: inline-block;
+  border: 0.15em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #9a2c2c; /* Black text */
+  font-size: 0.9rem;
+}
+
+.button__text {
+  display: block;
+  padding: 0.3em 1.25em;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.button--expanded .button__text { padding: 1.75em 2.25em; }
+
+/* Pseudo-element uses the data-text attribute for content */
+.button__text::before {
+  content: attr(data-text);
+  display: block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mask element for a subtle sliding effect on hover */
+.button__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  transform: translateX(-100%) rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button:hover .button__text::before {
+  transform: translateX(0.5em);
+}
+
+.button:hover .button__mask {
+  transform: translateX(100%) rotate(45deg);
+}
+
+.button:active {
+  opacity: 1;
+  background: white;
+  color: inherit;
+}

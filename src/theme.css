@@ -1,0 +1,13 @@
+:root {
+    /* Background */
+    --ebg: #fdf0d5;     /* Warm, neutral beige – used as the main background */
+  
+    /* Accent colors */
+    --ebblue:  #11557c;  /* Bright but controlled blue (for main data series or emphasis) */
+    --edkblue: #0f3b5f;  /* Darker blue for contrast and depth */
+    --eltblue: #9ac6e1;  /* Light blue for a softer touch */
+    --eltgreen: #a8d5ba; /* Light green for secondary data series */
+    --emidblue: #5b8bb2; /* Mid‑tone blue for balance */
+    --erose:   #d66a77;  /* Muted rose for accent and contrast */
+  }
+  
