@@ -16,7 +16,7 @@ export function loadCSV(url) {
 
 // Load the manifest file listing all session folders.
 export function loadManifest() {
-  return fetch('/data/dataManifest.json').then((res) => res.json());
+  return fetch(`${process.env.PUBLIC_URL}/data/dataManifest.json`).then((res) => res.json());
 }
 
 // Calculate KPIs from an array of session CSV data (Shots-Table 1).
