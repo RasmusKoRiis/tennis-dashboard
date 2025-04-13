@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import Launch from './pages/Launch';
 import Dashboard from './pages/Dashboard';
 
 function AppRouter() {
