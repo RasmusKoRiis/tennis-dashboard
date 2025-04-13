@@ -59,7 +59,7 @@ function Dashboard() {
         for (const session of sessionFolders) {
           let sessionShots = [];
           try {
-            const shotsUrl = `/data/${session}/Shots-Table 1.csv`;
+            const shotsUrl = `${process.env.PUBLIC_URL}/data/${session}/Shots-Table 1.csv`;            
             sessionShots = await loadCSV(shotsUrl);
             allSessionsShotsData.push(sessionShots);
             let serveShots = 0, serveIn = 0, serveSpeed = 0;
@@ -100,7 +100,7 @@ function Dashboard() {
           }
 
           try {
-            const pointsUrl = `/data/${session}/Points-Table 1.csv`;
+            const pointsUrl = `${process.env.PUBLIC_URL}/data/${session}/Points-Table 1.csv`;
             const sessionPoints = await loadCSV(pointsUrl);
             sessionPoints.forEach(row => {
               const hostScoreRaw = row["Host Game Score"]?.trim();
