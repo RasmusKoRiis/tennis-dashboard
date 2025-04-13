@@ -23,7 +23,8 @@ function Dashboard() {
   const [shotSpeedData, setShotSpeedData] = useState([]);
 
   useEffect(() => {
-    const url = '/data/2025-02-26/Shots-Table 1.csv';
+    const url = `${process.env.PUBLIC_URL}/data/2025-02-26/Shots-Table 1.csv`;
+
     loadCSV(url)
       .then((shotsData) => {
         const options = Array.from(new Set(shotsData.map(row => row.Player).filter(Boolean)));
