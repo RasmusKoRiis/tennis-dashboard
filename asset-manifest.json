@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tennis-dashboard/static/css/main.7a339a84.css",
+    "main.js": "/tennis-dashboard/static/js/main.78cd42b3.js",
+    "index.html": "/tennis-dashboard/index.html",
+    "main.7a339a84.css.map": "/tennis-dashboard/static/css/main.7a339a84.css.map",
+    "main.78cd42b3.js.map": "/tennis-dashboard/static/js/main.78cd42b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a339a84.css",
+    "static/js/main.78cd42b3.js"
+  ]
+}
