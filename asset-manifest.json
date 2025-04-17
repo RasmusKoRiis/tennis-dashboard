@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/tennis-dashboard/static/css/main.7a339a84.css",
-    "main.js": "/tennis-dashboard/static/js/main.b288915d.js",
+    "main.css": "/tennis-dashboard/static/css/main.5fe308ae.css",
+    "main.js": "/tennis-dashboard/static/js/main.fc6af005.js",
     "index.html": "/tennis-dashboard/index.html",
-    "main.7a339a84.css.map": "/tennis-dashboard/static/css/main.7a339a84.css.map",
-    "main.b288915d.js.map": "/tennis-dashboard/static/js/main.b288915d.js.map"
+    "main.5fe308ae.css.map": "/tennis-dashboard/static/css/main.5fe308ae.css.map",
+    "main.fc6af005.js.map": "/tennis-dashboard/static/js/main.fc6af005.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a339a84.css",
-    "static/js/main.b288915d.js"
+    "static/css/main.5fe308ae.css",
+    "static/js/main.fc6af005.js"
   ]
 }
